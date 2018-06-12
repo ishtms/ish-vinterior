@@ -53,7 +53,7 @@ class Cart extends Component {
                 </Sider>
                 <Layout style={{ marginLeft: 200 }}>
                     <Header style={{ background: '#fff', padding: 0 }}>
-                        <h1 style={{textAlign: 'center'}}>
+                        <h1 class='responsive-header' style={{textAlign: 'center'}}>
                             Your Cart £ 
 
                                 {this.props.cart.length > 0 ? 
