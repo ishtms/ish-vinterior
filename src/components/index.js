@@ -200,7 +200,7 @@ class Main extends Component {
                             <div style={{ display: 'flex', flexDirection: 'row', flexWrap:'wrap', justifyContent: 'space-around'}}>
                                 {this.props.items.payload ? 
                                 this.props.items.payload.data.slice(0, this.state.currentItems).map((curr, key) => (
-                                    <div key={key} style={{position: 'relative', height: '280px', width: '300px', margin: '50px 5px' }} onClick={ () => this.handleAddToCard(curr)}>
+                                    <div key={key} className='card__header' style={{position: 'relative', height: '280px', width: '300px', margin: '50px 5px' }} onClick={ () => this.handleAddToCard(curr)}>
                                         <NewsHeaderCard
                                             thumbnail={`https://picsum.photos/${key + 300}?blur`}
                                             title={curr.beer}
