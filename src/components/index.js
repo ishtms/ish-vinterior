@@ -255,7 +255,7 @@ class Main extends Component {
                         }
                     </div>
                     </Modal>
-                    <Footer style={{ textAlign: 'center' }}>
+                    <Footer style={{ textAlign: 'center', marginTop: '30px' }}>
                         &copy; London Beer Bar INC 2017 
                     </Footer>
                     </Layout>
