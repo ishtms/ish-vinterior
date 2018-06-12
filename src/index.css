@@ -37,4 +37,7 @@ body {
   .responsive-header {
     font-size: 11px;
   }
+  .news-header-card {
+    margin: 20px !important
+  }
 }
