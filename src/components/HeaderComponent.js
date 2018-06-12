@@ -19,13 +19,13 @@ export default class HeaderComponent extends Component {
     }
     return (
       <div style={divStyle}>
-        <h1 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'white' }}>
+        <h1 className='responsive-header' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'white' }}>
           Welcome to the
             <strong>London Beer Bar club
               {this.props.name === '' ? '' : `, ${this.handleCapitalize()}`}!
             </strong>
-          {this.props.handleLoadMore && <Button type="primary" icon="download" style={{ position: 'absolute', right: '10px', top: '10px' }} onClick={this.props.handleLoadMore}>Load More Beers</Button>}
         </h1>
+        {this.props.handleLoadMore && <Button type="primary" icon="download" style={{ position: 'absolute', right: '10px', top: '10px' }} className='responsive-header__button' onClick={this.props.handleLoadMore}><span>Load More Beers</span></Button>}
       </div>
     )
   }
