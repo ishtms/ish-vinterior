@@ -32,3 +32,9 @@ body {
     font-size: 18px !important;
   }
 }
+
+@media(max-width: 560px) {
+  .responsive-header {
+    font-size: 11px;
+  }
+}
