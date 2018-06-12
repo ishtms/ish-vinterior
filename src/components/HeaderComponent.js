@@ -21,7 +21,7 @@ export default class HeaderComponent extends Component {
       <div style={divStyle}>
         <h1 className='responsive-header' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'white' }}>
           Welcome to
-            <strong>London Beer Club
+            <strong> London Beer Club
               {this.props.name === '' ? '' : `, ${this.handleCapitalize()}`}!
             </strong>
         </h1>
